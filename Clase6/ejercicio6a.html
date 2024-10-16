@@ -1,0 +1,19 @@
+<script>
+    ep1 = parseInt(prompt("Ingresa la nota de tú ep1")) ;
+    ep2 = parseInt(prompt("Ingresa la nota de tú ep2"));
+    ep3 = parseInt(prompt("Ingresa la nota de tú ep3"));
+    ep4 = parseInt(prompt("Ingresa la nota de tú ep4"));
+    parcial = prompt("Ingresa la nota de tú parcial");
+    final = prompt("Ingresa la nota de tú final");
+
+    promedioEP = (ep1 + ep2 + ep3 + ep4) / 4;
+    // console.log(promedioEP);
+    promedioFinal = ( (promedioEP*2) + (3*parcial) + (4*final) ) / 9;
+    if(promedioFinal >= 13){
+        document.write("ESTÁS APROBADO");
+    } else{
+        document.write("NO ESTÁS APROBADO");
+    }
+    console.log( "Tu promedio de prácticas es: " + promedioEP);
+    console.log( "Tu promedio final es: " + promedioFinal);
+</script>

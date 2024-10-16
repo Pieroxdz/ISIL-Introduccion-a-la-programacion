@@ -1,0 +1,11 @@
+<script>
+    cantidadKilowatt = prompt("Ingresa la cantidad de Kilowatts que haz consumido");
+    cantidadMetrosCubicosAgua = prompt("Ingresa la cantidad de metros cubicos en agua que haz consumido");
+
+    precioLuz = cantidadKilowatt * 25
+    precioAgua = cantidadMetrosCubicosAgua * 2.4;
+    precioFinal = precioAgua + precioLuz
+    console.log("El precio total de la luz es " + precioLuz);
+    console.log("El precio total del agua es " + precioAgua);
+    console.log("El precio total por ambos servicios es " + precioFinal);
+</script>
