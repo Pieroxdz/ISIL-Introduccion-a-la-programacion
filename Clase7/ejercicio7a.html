@@ -1,0 +1,26 @@
+<!-- En determinada región se clasifican la temperatura como:
+Muy frío -> <0 
+Frío -> <=10
+Templado -> <=20
+Calido -> <=20
+Caliente -> <=40
+Muy caliente -> >40
+-->
+
+<script>
+    temp = prompt("Ingrese la temperatura actual del ambiente");
+
+    if(temp < 0){
+        console.log("Ambiente muy frío");
+    } else if(temp <= 10){
+        console.log("Ambiente frío");
+    } else if(temp <= 20){
+        console.log("Ambiente templado");
+    } else if(temp <= 30){
+        console.log("Ambiente calido");
+    } else if(temp <= 40){
+        console.log("Ambiente caliente");
+    } else{
+        console.log("Ambiente muy caliente");
+    }
+</script>
