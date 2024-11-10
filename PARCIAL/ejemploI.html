@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #valorRojo{
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="valorRojo"></h1>
+
+
+    <script>
+        intervalo = setInterval(cambiar, 50)
+        rojo = 0
+        document.getElementById("valorRojo").innerText = rojo;
+
+        function cambiar(){
+            rojo+=1;
+            document.getElementById("valorRojo").innerText = rojo; // Actualiza el valor en el encabezado
+            document.body.style.backgroundColor = "rgb(" + rojo + ", 0, 0)";
+            /* RGB 0 .... 255 */
+            if(rojo == 255){
+                clearInterval(intervalo);
+            }
+        }
+    </script>
+</body>
+</html>

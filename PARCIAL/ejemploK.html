@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-control {
+            margin-bottom: 10px;
+            border: solid 2px cadetblue;
+            padding: 10px;
+        }
+
+        .btn{
+            background-color: darkgoldenrod;
+            border: none;
+            padding: 10px;
+            color: antiquewhite;
+            cursor: pointer;
+        }
+
+        #resultado{
+            font-size: 36px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ejemplo formularios</h1>
+    <div>
+        <input type="text" class="form-control" id="txtNum1">
+    </div>
+    <div>
+        <input type="text" class=" form-control" id="txtNum2">
+    </div>
+    <div>
+        <button class="btn" id="btnSumar">Sumar</button>
+        <button class="btn" id="btnRestar">Restar</button>
+        <button class="btn" id="btnMultiplicar">Multiplicar</button>
+        <button class="btn" id="btnDividir">Dividir</button>
+    </div>
+    <div id="resultado">
+
+    </div>
+
+
+    <script>
+        "use strict"
+
+        let Tnumero1 = document.getElementById("txtNum1");
+        let Tnumero2 = document.getElementById("txtNum2");
+        let Tresultado = document.getElementById("resultado");
+
+        document.getElementById("btnSumar").addEventListener("click", function(){
+            let num1 = Number(Tnumero1.value);
+            let num2 = Number(Tnumero2.value);
+            let total = num1 + num2;
+            Tresultado.innerText = total;
+        })
+        document.getElementById("btnRestar").addEventListener("click", function(){
+            let num1 = Tnumero1.value;
+            let num2 = Tnumero2.value;
+            let total = num1 - num2;
+            Tresultado.innerText = total;
+        })
+        document.getElementById("btnMultiplicar").addEventListener("click", function(){
+            let num1 = Tnumero1.value;
+            let num2 = Tnumero2.value;
+            let total = num1 * num2;
+            Tresultado.innerText = total;
+        })
+        document.getElementById("btnDividir").addEventListener("click", function(){
+            let num1 = Tnumero1.value;
+            let num2 = Tnumero2.value;
+            let total = num1 / num2;
+            Tresultado.innerText = total;
+        })
+
+    </script>
+</body>
+
+</html>

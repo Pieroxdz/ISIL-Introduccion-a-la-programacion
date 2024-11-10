@@ -1,0 +1,29 @@
+<script>
+    p1 = Number(prompt("Ingresa tu 1era nota"));
+    p2 = Number(prompt("Ingresa tu 2da nota"));
+    p3 = Number(prompt("Ingresa tu 3era nota"));
+    p4 = Number(prompt("Ingresa tu 4ta nota"));
+
+    if (p1 < p2){
+        menor1 = p1;
+    }else{
+        menor1 = p2
+    }
+
+    if (p3 < p4){
+        menor2 = p3;
+    }else{
+        menor2 = p4
+    }
+
+    if(menor < menor2){
+        menor = menor1;
+    } else{
+        menor = menor2;
+    }
+
+    total = p1 + p2 + p3 + p4 - menor;
+    promedio = total/3;
+
+    alert("El promedio de practicas es: " + promedio)
+</script>

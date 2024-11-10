@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #sprite {
+            width: 100px;
+            height: auto;
+            position: absolute;
+            top: 300px;
+            left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="img/icon.png" alt="" id="sprite">
+
+
+
+    <script>
+        "use strict"
+        let posicionX = 400;
+        document.getElementById("sprite").style.left = posicionX + "px"
+        setInterval(mover, 100)
+
+        function mover(){
+            posicionX += 5;
+            if(posicionX > 1000){
+                posicionX = 100
+            }
+            document.getElementById("sprite").style.left = posicionX + "px"
+        }
+    </script>
+</body>
+
+</html>

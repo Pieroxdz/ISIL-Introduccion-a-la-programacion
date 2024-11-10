@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #padre{
+            display: flex;
+            align-items: center;
+        }
+
+        .boton{
+            width: 50px;
+            height: 50px;
+            background-color: darkorange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            font-size: 55px;
+            font-weight: bold;
+        }
+
+        #contador{
+            font-size: 48px;
+        }
+    </style>
+</head>
+<body>
+    <div id="padre">
+        <div class="boton"  id="btnRetroceder"> < </div>
+        <div class="boton" id="btnAvanzar"> > </div>
+        <span id="contador"></span>
+    </div>
+    <img src=""  alt="img" id="visor">
+
+
+
+    <script>
+        "use strict"
+        let posicion = 1;
+        document.getElementById("contador").innerText = posicion;
+        document.getElementById("visor").setAttribute("src","img/img" + posicion +".jpg" )
+
+        document.getElementById("btnAvanzar").addEventListener("click", function(){
+                posicion++;
+                if(posicion == 13){
+                    posicion = 1
+                }
+                document.getElementById("contador").innerText = posicion;
+                document.getElementById("visor").setAttribute("src","img/img" + posicion +".jpg" )
+        });
+        
+        document.getElementById("btnRetroceder").addEventListener("click", function(){
+                posicion--;
+                if(posicion == 0){
+                    posicion = 12
+                }
+                document.getElementById("contador").innerText = posicion;
+                document.getElementById("visor").setAttribute("src","img/img" + posicion +".jpg" )
+        });
+
+        setInterval(cambiarImagen, 3000)
+        function cambiarImagen(){
+            posicion++;
+                if(posicion == 13){
+                    posicion = 1
+                }
+                document.getElementById("contador").innerText = posicion;
+                document.getElementById("visor").setAttribute("src","img/img" + posicion +".jpg" )
+        }
+    </script>
+</body>
+</html>

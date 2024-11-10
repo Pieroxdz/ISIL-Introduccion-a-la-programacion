@@ -1,0 +1,10 @@
+<script>
+    botellas = prompt("Ingrese la cantidad de botellas");
+    botellasOferta = parseInt(botellas / 3);
+    if (botellasOferta>5) {
+        botellasOferta = 5
+    }
+    botellasPagar = botellas - botellasOferta
+    totalPagar = botellasPagar * 10;
+    alert("El total a pagar es: " + totalPagar)
+</script>
