@@ -1,0 +1,39 @@
+<script>
+    "use strict"
+    let pc1 = Number(prompt("Ingresa la nota de tu pc1")); //20
+    let pc2 = Number(prompt("Ingresa la nota de tu pc2")); //20
+    let pc3 = Number(prompt("Ingresa la nota de tu pc3")); //17
+    let pc4 = Number(prompt("Ingresa la nota de tu pc4")); //20
+    let parcial = prompt("Ingresa la nota de tu parcial");
+    let final = prompt("Ingresa la nota de tu final");
+
+    let menor1, menor2, notaMenor;
+
+    if(pc1 > pc2){
+        menor1 = pc2
+    } else{
+        menor1 = pc1
+    }
+
+    if(pc3 > pc4){
+        menor2 = pc4
+    } else{
+        menor2= pc3
+    }
+
+    if(menor1 > menor2){
+        notaMenor = menor2
+    }else{
+        notaMenor = menor1
+    }
+
+    let promedioPC = (pc1 + pc2 + pc3 + pc4 - notaMenor) / 3;
+
+    let PF = ((2 * parcial) + (3 * promedioPC) + (4 * final))/ 9;
+
+    if(PF < 11){
+        alert ("Estás desaprobado con: " + PF)
+    }else{
+        alert ("Estás aprobado con: " + PF)
+    }
+</script>
