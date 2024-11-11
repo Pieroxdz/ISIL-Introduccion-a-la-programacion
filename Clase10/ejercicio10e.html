@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .caja{
+            height: 20px;
+            margin-bottom: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor"></div>
+    <script>
+        "use strict"
+        let vcontenedor = document.getElementById("contenedor")
+        for(let i=0; i<=255; i++){
+        let cajita = document.createElement("div")
+        cajita.classList.add("caja")
+        cajita.style.backgroundColor = "rgb(" + i + ",0,0)"
+        vcontenedor.appendChild(cajita)
+        }
+    </script>
+</body>
+</html>
