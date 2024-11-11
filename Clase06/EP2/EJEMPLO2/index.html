@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boton{
+            background-color: #FF0000;
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin: 5px;
+            border-radius: 50%;
+            border:  2px solid #000000;
+            cursor: pointer;
+        }
+
+        #boton1{background-color: aquamarine;}
+        #boton2{background-color: coral;}
+        #boton3{background-color: darkkhaki;}
+    </style>
+</head>
+<body>
+    <div>
+        <div class="boton" id="boton1"></div>
+        <div class="boton" id="boton2"></div>
+        <div class="boton" id="boton3"></div>
+    </div>
+
+    <img src="foto1.jpg" alt="img" id="visor">
+
+    <script>
+        document.getElementById("boton1").addEventListener("click", function(){
+            document.body.style.backgroundColor = "aquamarine";
+            document.getElementById("visor").setAttribute("src", "foto1.jpg");
+        })
+        document.getElementById("boton2").addEventListener("click", function(){
+            document.body.style.backgroundColor = "coral";
+            document.getElementById("visor").setAttribute("src", "foto2.jpg");
+        })
+        document.getElementById("boton3").addEventListener("click", function(){
+            document.body.style.backgroundColor = "darkkhaki";
+            document.getElementById("visor").setAttribute("src", "foto3.jpg");
+        })
+    </script>
+</body>
+</html>

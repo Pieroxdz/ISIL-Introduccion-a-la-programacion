@@ -1,0 +1,30 @@
+<script>
+
+    const ACEITE = 10
+    const ARROZ = 25
+    const FIDEO = 5
+    const LECHE = 6
+
+    
+    cantAceite = prompt("Ingresar la cantidad de aceite: ");
+    cantArroz = prompt("Ingresar la cantidad de arroz: ");
+    cantFideo = prompt("Ingresar la cantidad de fideo: ");
+    cantLeche = prompt("Ingresar la cantidad de leche: ");
+
+    //No es String en operaciones distintas a +
+    subtotalAceite = cantAceite * ACEITE
+    subtotalArroz = cantArroz * ARROZ
+    subtotalFideo = cantFideo * FIDEO
+    subtotalLeche = cantLeche * LECHE
+
+    total = subtotalAceite + subtotalArroz + subtotalFideo + subtotalLeche
+
+    console.log("*** TOTUS ***");
+    console.log("Subtotal de aceite: " + subtotalAceite);
+    console.log("Subtotal de arroz: " + subtotalArroz);
+    console.log("Subtotal de fideo: " + subtotalFideo);
+    console.log("Subtotal de leche: " + subtotalLeche);
+
+    console.log("total: " + total);
+    
+</script>

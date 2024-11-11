@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>  </h1>
+
+    <script>
+        //Platillos valen 200 puntos
+        //Obstaculos valen 50 puntos
+        //Supernaves valen 500 puntos
+
+        platillos = 10;
+        obstaculos = 20;
+        supernaves = 2
+        puntos = platillos * 200 + obstaculos * 50 + supernaves * 500
+        console.log("El puntaje total es: " + puntos);
+
+        nombre = prompt("Introduce tú nombre");
+        
+        encabezado = document.querySelector('h1')
+        encabezado.textContent = `Bievenido: ${nombre}`;
+
+
+    </script>
+</body>
+
+</html>

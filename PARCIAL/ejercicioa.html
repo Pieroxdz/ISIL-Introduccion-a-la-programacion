@@ -1,0 +1,46 @@
+<script>
+"use strict"
+alert("Bienvenido a la cotización de tu Bono");
+let cantBici = prompt("Ingresa la cantidad de bicicletas que haz vendido");
+let cantMoto = prompt("Ingresa la cantidad de motos que haz vendido");
+let cantAuto = prompt("Ingresa la cantidad de autos que haz vendido");
+
+let precioBici = 500;
+let precioMoto = 2000;
+let precioAuto = 10000;
+
+let montoBici = cantBici * precioBici;
+let montoMoto = cantMoto  * precioMoto;
+let montoAuto = cantAuto * precioAuto;
+
+let bonoBici = 0;
+let bonoMoto = 0;
+let bonoAuto = 0;
+
+/* CONDICIONAL PARA BICICLETAS */
+if(montoBici > 5000){
+    bonoBici = montoBici * 0.10;
+}else{
+    bonoBici = montoBici * 0.05;
+}
+
+/* CONDICIONAL PARA MOTOS */
+if(montoMoto > 10000){
+    bonoMoto = montoMoto * 0.15;
+}else{
+    bonoMoto = montoMoto * 0.10;
+}
+
+/* CONDICIONAL PARA AUTOS */
+if(montoAuto > 20000){
+    bonoAuto = montoAuto * 0.20
+}else{
+    bonoAuto = montoAuto * 0.10;
+}
+
+
+let bonoFinal = bonoBici + bonoAuto + bonoMoto
+
+alert("Tu bono final es de: " + bonoFinal)
+
+</script>

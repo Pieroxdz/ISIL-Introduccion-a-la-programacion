@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boton {
+            background-color: #FF0000;
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin: 5px;
+            border-radius: 50%;
+            border: 2px solid #000000;
+            cursor: pointer;
+        }
+        #botonDerecha {
+            background-color: aquamarine;
+        }
+        #botonIzquierda {
+            background-color: chartreuse;
+        }
+        #botonAbajo {
+            background-color: chocolate;
+        }
+        #botonArriba {
+            background-color: darkgoldenrod;
+        }
+        #nave{
+            position: absolute;
+            top: 100;
+            left: 60px;
+        }
+    </style>
+</head>
+    <div>
+        <div class="boton" id="botonIzquierda"></div>
+        <div class="boton" id="botonDerecha"></div>
+        <div class="boton" id="botonArriba"></div>
+        <div class="boton" id="botonAbajo"></div>
+    </div>
+    <img src="destructorImperial.png" id="nave" alt="caza star wars">
+
+    <script>
+        posicionx = 300;
+        posiciony = 150;
+        document.getElementById("nave").style.left = posicionx + "px";
+        document.getElementById("nave").style.left =  posiciony + "px";
+
+        document.getElementById("botonDerecha").addEventListener("click", function(){
+            posicionx += 20;
+            if(posicionx > 600){
+                posicionx = -60
+            }
+            document.getElementById("nave").style.left = posicionx + "px";
+        })
+        document.getElementById("botonIzquierda").addEventListener("click", function(){
+            posicionx -= 20;
+            if(posicionx < -60){
+                posicionx = 600
+            }
+            document.getElementById("nave").style.left = posicionx + "px";
+        })
+        document.getElementById("botonAbajo").addEventListener("click", function(){
+            if(posiciony < 410){
+                posiciony += 20;
+                document.getElementById("nave").style.top = posiciony + "px";
+            }
+        })
+        document.getElementById("botonArriba").addEventListener("click", function(){
+            if(posiciony > 70){
+                posiciony -= 20;
+                document.getElementById("nave").style.top = posiciony + "px";
+            }
+        })
+    </script>
+<body>
+
+</body>
+
+</html>

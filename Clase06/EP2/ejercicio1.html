@@ -1,0 +1,22 @@
+<script>
+    fideoKG = prompt("¿Cuántos kilos de fideos necesitas?");
+    azucarKG = prompt("Cuántos kilos de azucar necesitas");
+    arrozKG = prompt("Cuántos kilos de arroz necesitas");
+
+    totalFideo = fideoKG * 4;
+    totalAzucar = azucarKG * 6;
+    totalArroz = arrozKG * 5;
+    totalAPagarSinIgv = (totalFideo + totalAzucar + totalArroz) ;
+    igv = totalAPagarSinIgv * 0.18;
+    totalAPagarConIgv = totalAPagarSinIgv + igv
+
+    if(totalAPagarConIgv > 1000){
+        // totalAPagar = totalAPagar - (totalAPagar * 0.2);
+
+        //Aquí multiplicas el total a pagar por el 80% reduciendo así el 20%
+        totalAPagarConIgv *= 0.8;
+
+    }
+
+    alert("El total a pagar es: " + totalAPagarConIgv)
+</script>

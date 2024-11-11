@@ -1,0 +1,26 @@
+<script>
+    horasExtra = prompt("Ingresa la cantidad de horas extra que haz hecho este mes:");
+    numHijos = prompt("Ingresa la cantidad de hijos que tienes");
+    horasFaltas = prompt("Ingresa la cantidad de horas faltantes")
+    tardanzas = prompt("Ingresa la cantidad de tardanzas que haz tenido este mes")
+    
+    sueldoBasico = 1024; //Sueldo minimo en Perú
+    ingresoHorasExtra = horasExtra * 20
+    ingresoHijos = numHijos * 500;
+    egresoFaltas = horasFaltas * 10
+    egresoTardanza = tardanzas * 100
+    sueldoBruto = sueldoBasico + ingresoHijos + ingresoHorasExtra
+    descuentos = egresoFaltas + egresoTardanza;
+    sueldoNeto = sueldoBruto - descuentos;
+
+    
+    if(sueldoNeto > 5000){
+        sueldoNeto *= 1.1;
+    } else if(sueldoNeto > 20000){
+        sueldoNeto *= 1.2;
+    }
+    
+    console.log("El sueldo bruto: " + sueldoBruto);
+    console.log("El total de descuentos es: " + descuentos);
+    console.log("El sueldo neto es: " + sueldoNeto);
+</script>
