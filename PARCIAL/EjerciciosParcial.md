@@ -1,25 +1,62 @@
 # Evaluación Parcial
 
-1. La evaluación es individual.
+### Instrucciones Generales
+1. **Evaluación individual**: Cada estudiante debe realizar su propio trabajo.
 
-2. Deben desarrollar los Video tutoriales 6, 7, 8, 9 y 10 en una sola carpeta.  
-   **Valor:** 10 puntos
+2. **Organización de la carpeta**: 
+   - Crear una única carpeta que contenga:
+     - Los videos tutoriales 6, 7, 8, 9 y 10.
+     - El código de los ejercicios especificados en esta evaluación.
+     - Las fotos de los diagramas de flujo correspondientes a los ejercicios.
+   - **Valor total**: 10 puntos.
 
-3. En esa misma carpeta deben desarrollar los siguientes ejercicios:
+3. **Videos Tutoriales**  
+   - [Video 6](https://www.youtube.com/watch?v=nPnFoL2kuM4&ab_channel=DavidChuraOlazabal)  
+   - [Video 7](https://www.youtube.com/watch?v=QmVuNNH6OmA&t=4s&ab_channel=DavidChuraOlazabal)  
+   - [Video 8](https://www.youtube.com/watch?v=iAEewCRlGsI&ab_channel=DavidChuraOlazabal)  
+   - [Video 9](https://www.youtube.com/watch?v=jQdk7j-raGM&t=1835s&ab_channel=DavidChuraOlazabal)  
+   - [Video 10](https://www.youtube.com/watch?v=DNu9fYPmH7A&ab_channel=DavidChuraOlazabal)  
 
-   ### Ejercicio 1
-   En un determinado mes, si un vendedor vende más de 5,000 Soles en bicicletas tiene un bono del 10% de lo contrario solo del 5%. Si vende más 10,000 soles en motos tiene un bono del 15% de lo contrario un bono del 10%. Si vende más 20,000 en autos tiene un bono del 20%, de lo contrario del 10%. Si cada bicicleta cuesta 500 soles, cada moto cuesta 2000 soles y cada auto 10,000.  
-   **Indique:** ¿cuánto recibirá un vendedor por un determinado mes?  
-   **Valor:** 6 puntos
+---
 
-   ### Ejercicio 2
-   Se ingresan las 4 prácticas del alumno y el Examen Parcial (EP) y Final (EF), calcular el Promedio de Prácticas (PP) y el Promedio Final (PF).  
-   - Para el cálculo del promedio se elimina la nota menor y solo se promedian las 3 notas de práctica más altas entre 3. 
-   - El Promedio Final se calcula con la siguiente fórmula:  
+### Ejercicios
+
+#### Ejercicio 1: Bonificación por Ventas
+En un determinado mes, si un vendedor alcanza ciertos niveles de venta, recibe bonos según las siguientes condiciones:
+   - **Bicicletas**: Si vende más de 5,000 soles, recibe un bono del 10%, de lo contrario un bono del 5%.  
+   - **Motos**: Si vende más de 10,000 soles, recibe un bono del 15%, de lo contrario un bono del 10%.  
+   - **Autos**: Si vende más de 20,000 soles, recibe un bono del 20%, de lo contrario un bono del 10%.  
+   - **Valores de productos**: Cada bicicleta cuesta 500 soles, cada moto 2000 soles y cada auto 10,000 soles.
+
+**Objetivo**: Determinar el bono total que recibirá un vendedor en el mes, basándose en sus ventas.  
+**Valor**: 6 puntos.
+
+---
+
+#### Ejercicio 2: Cálculo de Promedio Final
+Este ejercicio consiste en calcular las notas finales de un estudiante basado en sus prácticas y exámenes:
+
+1. **Promedio de Prácticas (PP)**:
+   - Ingresar las calificaciones de las 4 prácticas y eliminar la nota más baja.
+   - Calcular el promedio de las 3 notas más altas.
+
+2. **Promedio Final (PF)**:
+   - Utilizar la siguiente fórmula para el cálculo:  
      \[
      PF = \frac{(2 \times EP) + (3 \times PP) + (4 \times EF)}{9}
      \]
-   - Indique si el alumno aprobó o desaprobó el curso.  
-   **Valor:** 4 puntos
+   - **EP**: Examen Parcial, **EF**: Examen Final.
 
-4. Toda la carpeta deben comprimirla (empaquetarla) y subirla a esta tarea. También deben subir su diagrama de flujo de la pregunta 4 y 5 como foto.
+3. **Resultado**:
+   - Indicar si el alumno aprobó o desaprobó el curso.  
+**Valor**: 4 puntos.
+
+---
+
+### Entrega Final
+1. **Contenido de la carpeta**:
+   - Videos tutoriales.
+   - Código de cada ejercicio.
+   - Fotos de los diagramas de flujo para los ejercicios.
+
+2. **Formato de entrega**: Comprimir la carpeta en un archivo `.zip` y subirlo a la tarea asignada. Asegurarse de incluir todas las fotos de los diagramas de flujo correspondientes.
