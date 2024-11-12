@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mensaje {
+            font-size: 72px;
+        }
+    </style>
+</head>
+<body>
+    <button id="anterior">Anterior</button>
+    <button id="siguiente">Siguiente</button>
+    <div id="contador"></div>
+    <div id="mensaje"></div>
+    
+    <script>
+        let frases = [
+            "De las cosas que sé, no estoy seguro si las sé, de lo unico que estoy seguro es que solo sé que nada sé",
+            "Vine, vi y vencí",
+            "La libertad es el ultimo escaño de la humanidad",
+            "¿Qué es la vida? Una ilusión, un sueño, una ficción, y los sueños, sueños son",
+            "No tengas miedo de alguien que sabe 10000 golpes, ten miedo de alguien que ha practicado un golpe 10000 veces",
+            "Si dudo, soy. Si soy, soy algo. Si soy algo, soy algo pensante. Y si soy algo pensante, pienso; luego, pienso, luego existo.",
+            "El tiempo vale más que un rolex, enseñarte vale más que un tabú; aunque pueda tenerlo todo, no hay nada si me faltas TÚ"
+        ];
+
+        let visor = document.getElementById("mensaje");
+        let posicion = 0;
+
+        let botonAnterior = document.getElementById("anterior");
+        let botonSiguiente = document.getElementById("siguiente");
+        let vcontador = document.getElementById("contador");
+
+        const actualizar = () => {
+            visor.innerText = frases[posicion];
+            vcontador.innerText = `Frase ${posicion + 1} de ${frases.length}`;
+        };
+
+        actualizar();
+
+        botonAnterior.addEventListener("click", () => {
+            posicion--;
+            if (posicion < 0) {
+                posicion = frases.length - 1;
+            }
+            actualizar();
+        });
+
+        botonSiguiente.addEventListener("click", () => {
+            posicion++;
+            if (posicion >= frases.length) {
+                posicion = 0;
+            }
+            actualizar();
+        });
+    </script>
+</body>
+</html>

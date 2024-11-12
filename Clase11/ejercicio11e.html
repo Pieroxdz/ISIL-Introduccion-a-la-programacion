@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="prueba1">Prueba 1</button>
+    <button id="prueba2">Prueba 2</button>
+    <button id="prueba3">Prueba 3</button>
+
+    <script>
+        "use strict"
+
+        const mensaje = () =>{
+            console.log("Aprendiendo funciones");
+            console.log("Esto es JavaScript");
+            console.log("--------------------");
+        }
+
+        const despedidad = () => {
+            console.log("Adiós");
+            
+        }
+
+        let boton1 = document.getElementById("prueba1");
+        let boton2 = document.getElementById("prueba2");
+        let boton3 = document.getElementById("prueba3");
+
+        boton1.addEventListener("click", () => {
+            mensaje()
+            console.log("Este es el primer botón");
+            despedidad()
+        });
+
+        boton2.addEventListener("click", () => {
+            mensaje()
+            console.log("Este es el botón central");
+            despedidad()
+        });
+        
+        boton3.addEventListener("click", () => {
+            mensaje()
+            console.log("Este es el  último botón");
+            despedidad()
+        });
+
+
+    
+
+    </script>
+</body>
+
+</html>
