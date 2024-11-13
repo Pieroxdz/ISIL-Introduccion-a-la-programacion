@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-control{
+            border: solid 1px gray;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+        .btn{
+            padding: 10px;
+            background-color: blueviolet;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" class="form-control" id="txtCorreo">
+    </div>
+    <div>
+        <input type="password" class="form-control" id="txtClave">
+    </div>
+    <div>
+        <button class="btn" id="btnIniciarSesion">Iniciar Sesión</button>
+    </div>
+
+
+    <script>
+        let tCorreo = document.getElementById("txtCorreo");
+        let tClave = document.getElementById("txtClave");
+        let bIniciarSesion = document.getElementById("btnIniciarSesion");
+
+        bIniciarSesion.addEventListener("click", function(){
+
+
+                    if(tCorreo.value == "" ){
+                        alert("Debe ingresa una cuenta")
+                        tCorreo.focus();
+                        //Con esto se interrumple el flujo de la función
+                        //Ya no se procede con las instrucciones anteriores
+                        return
+                    }
+
+                    if(tClave.value == ""){
+                        alert("Debe ingresa una contraseña")
+                        tClave.focus();
+                        return
+                    }
+
+                    if(!Number(tClave.value)){
+                        alert("La contraseña debe ser un número")
+                        tClave.focus();
+                        return
+                    }
+
+                    if(tCorreo.value == "markinpiero005@gmail.com" || tCorreo.value == "933445851"){
+                        if(tClave.value == "123"){
+                            alert("Bienvenido")
+                            tCorreo.value = "";
+                            tClave.value = "";
+                        }else{
+                            alert("La clave es incorrecta")
+                            tClave.focus();
+                        }
+                    }else{
+                        alert("El nombre de usuario es incorrecto")
+                        tCorreo.focus();
+                    }
+        })
+    </script>
+</body>
+</html>
