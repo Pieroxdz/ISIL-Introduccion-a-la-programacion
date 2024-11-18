@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    <img src="" alt="img" id="banner">
-    <script>
-        "use strict"
-        let visor = document.getElementById("banner")
-        let galeria = [
-            "g1.jpg", "g2.jpg","g3.jpg","g4.jpg","g5.jpg"
-        ]
+  <img src="" alt="" id="banner">
+  <script>
+    "use strict"
+    let visor = document.getElementById("banner")
+    let galeria = [
+      "gente.jpg", "grupo.jpg","otragente.jpg","personas.jpg",
+      "https://www.telemundo.com/sites/nbcutelemundo/files/images/gallery/2017/09/18/hombre-y-mujer-haciendo-ejercicio-en-la-playa-2.jpg",
+      "https://www.ihreservicenummer.de/wp-content/uploads/2019/08/Unternehmensimage-Servicenummer.jpg"
+    ]
 
-        function cambiar() {
-         let aleatorio = Math.floor(Math.random()*galeria.length)
-         visor.src = "genteNs/" + galeria[aleatorio]
-        }
-        
-        setInterval(cambiar,500)
-    </script>
-    
+    function cambiar() {
+      let aleatorio = Math.floor(Math.random()*galeria.length)
+      visor.src = galeria[aleatorio]
+    }
+
+    setInterval(cambiar,500)
+  </script>
 </body>
 </html>

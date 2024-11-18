@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .numero{font-size: 36px;}
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .numero {
+      font-size: 36px;
+    }
+  </style>
 </head>
+
 <body>
-    <div id="cajaSegundos" class="numero"></div>
-    <div id="cajaMinutos" class="numero"></div>
-    <div id="cajaHoras" class="numero"></div>
-    <div id="cajaMeses" class="numero"></div>
-    <div id="cajaAnios" class="numero"></div>
-    <script>
-        "use strict"
-        let vsegundos = document.getElementById("cajaSegundos")
-        let vminutos = document.getElementById("cajaMinutos")
-        let vhoras = document.getElementById("cajaHoras")
-        let vmeses = document.getElementById("cajaMeses");
-        let vanios = document.getElementById("cajaAnios");
+  <div id="cajaDias" class="numero"></div>
+  <div id="cajaMeses" class="numero"></div>
+  <div id="cajaAnios" class="numero"></div>
+  <div id="cajaSegundos" class="numero"></div>
+  <div id="cajaMinutos" class="numero"></div>
+  <div id="cajaHoras" class="numero"></div>
 
-        let mes = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+  <script>
+    "use strict"
+    let vsegundos = document.getElementById("cajaSegundos")
+    let vminutos = document.getElementById("cajaMinutos")
+    let vhoras = document.getElementById("cajaHoras")
+    let vdias = document.getElementById("cajaDias")
+    let vmeses = document.getElementById("cajaMeses")
+    let vanios = document.getElementById("cajaAnios")
 
-        let fechaActual = new Date()//Se obtiene la fecha y la hora actual
+    let mes = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
 
-        let segundos = fechaActual.getSeconds()
-        let minutos = fechaActual.getMinutes()
-        let horas = fechaActual.getHours()
-        let meses = fechaActual.getMonth() + 1; // Los meses en JavaScript empiezan desde 0 (enero = 0)
-        let anios = fechaActual.getFullYear();
 
-        vsegundos.innerHTML = segundos
-        vminutos.innerHTML = minutos 
-        vhoras.innerHTML = horas 
-        vmeses.innerHTML = mes[fechaActual.getMonth()]
-        vanios.innerHTML = anios
-    </script>
-    
+    function actualizarHora(){
+      let fechaActual = new Date()//Se obtiene la fecha y la hora actual
+      let segundos = fechaActual.getSeconds()
+      let minutos = fechaActual.getMinutes()
+      let horas = fechaActual.getHours()
+      let dias = fechaActual.getDate()
+      let meses = fechaActual.getMonth() + 1
+      let anios = fechaActual.getFullYear()
+      vsegundos.innerHTML = segundos
+      vminutos.innerHTML = minutos
+      vhoras.innerHTML = horas
+      vdias.innerHTML = dias
+      vmeses.innerHTML = mes[fechaActual.getMonth()]
+      vanios.innerHTML = anios
+    }
+    setInterval(actualizarHora, 500)
+  </script>
 </body>
+
 </html>

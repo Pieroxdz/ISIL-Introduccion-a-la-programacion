@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #perro {
+            position: absolute;
+            left: 100px;
+            top: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="perro.png" id="perro" width="280px" alt="img">
+
+
+
+
+    <script>
+        /* Numero entre 0 y 1 */
+        // let aleatorio = Math.random() * 600;
+        // console.log(aleatorio);
+        let colorRojo = parseInt(Math.random() * 256);
+        let colorVerde = parseInt(Math.random() * 256);
+        let colorAzul = parseInt(Math.random() * 256);
+
+        document.body.style.backgroundColor = "rgb(" + coloRojo + "," + colorVerde + "," + colorAzul + ")";
+
+
+
+        let posicionX = Math.random() * 600;
+        let posicionY = Math.random() * 900;
+
+        let vperrito = document.getElementById("perro")
+        vperrito.style.left = posicionX + "px";
+        vperrito.style.top = posicionY + "px";
+
+        setInterval(cambiarUbicacion, 2000)
+
+        function cambiarUbicacion(params) {
+             posicionX = Math.random() * 600;
+             posicionY = Math.random() * 900;
+
+            vperrito.style.left = posicionX + "px";
+            vperrito.style.top = posicionY + "px";
+        }
+
+    </script>
+</body>
+
+</html>
