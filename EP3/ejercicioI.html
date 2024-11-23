@@ -6,9 +6,10 @@
     <title>Document</title>
     <style>
         .cajita{
-            background-color: rgba(0, 0, 0, 0.1);
+            background-color: rgba(234, 9, 9, 0.1);
             width: 50px;
             height: 50px;
+            position: absolute;
         }
     </style>
 </head>
@@ -22,11 +23,17 @@
     <script>
         "use strict"
 
+        let posX = 200;
+        let posY = 100;
         let vContenedor = document.getElementById("contenedor");
+
+
         for(let i = 1; 1<=10; i++){
             let caja = document.createElement("DIV");
             caja.className = "cajita";
             vContenedor.append(caja);
+            caja.style.left = posX + "px"
+            caja.style.top = posY + "px"
         }
 
     </script>
