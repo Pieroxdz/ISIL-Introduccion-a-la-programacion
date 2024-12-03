@@ -1,0 +1,28 @@
+#menu-principal{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+#menu-principal li a{
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: antiquewhite;
+    margin: 2px;
+}
+#menu-principal li a:hover{
+    background-color: aquamarine;
+}
+#mensaje{
+    font-size: 96px;
+}
+.seleccionado{
+    background-color: chartreuse!important;
+}
+#menu-principal li a span{
+    background-color: black;
+    color: white;
+    padding: 3px 6px;
+    margin-left: 5px;
+}

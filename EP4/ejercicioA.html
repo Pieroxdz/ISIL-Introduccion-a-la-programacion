@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ENLAZO MI CSS -->
+    <link rel="stylesheet" href="css/stylesA.css">
+</head>
+<body>
+    <div>
+        <input type="text" id="txtNombre" placeholder="Nombre del producto">
+    </div>
+    <div>
+        <input type="text" id="txtPrecio" placeholder="Precio">
+    </div>
+    <div>
+        <input type="text" id="txtCantidad" placeholder="Cantidad">
+    </div>
+    <div>
+        <button id="btnAgregar">Agregar</button>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>SubTotal</th>
+                <th>Accion</th>
+            </tr>
+        </thead>
+        <tbody id="body-productos">
+            <!-- VAMOS A INYECTARLOS DE MANERA DINÁMICAS -->
+            <!-- <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr> -->
+        </tbody>
+    </table>
+
+    <h2 id="cajaTotal"></h2>
+
+    <script src="js/mainA.js"></script>
+</body>
+</html>

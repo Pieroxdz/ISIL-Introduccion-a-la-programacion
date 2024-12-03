@@ -1,0 +1,10 @@
+.caja{
+    width: 100px;
+    height: 100px;
+    /*background-color: rgb(255,0,0);*/
+    display: inline-block;
+    margin: 10px;
+    transition: all ease-in-out .5s;
+    background-image: url("../images/Cb1.jpg");
+    background-size: cover;
+}

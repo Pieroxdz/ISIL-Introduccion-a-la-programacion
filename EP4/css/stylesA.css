@@ -1,0 +1,28 @@
+input{
+    border: solid 1px rgb(73, 67, 67);
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.table{
+    border-collapse: collapse;
+}
+
+
+.table th{
+    background-color: black;
+    color: white;
+}
+
+.table th,
+.table td{
+    padding: 8px;
+}
+
+.table td{
+    border-bottom: solid 1px white;
+}
+
+.btnEliminar{
+    
+}
