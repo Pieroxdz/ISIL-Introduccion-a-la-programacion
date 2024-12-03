@@ -1,0 +1,10 @@
+<script>
+    const areaTrianguloHeron = (ladoA, ladoB, ladoC) =>{
+        let semiPerimetro = (ladoA + ladoB + ladoC) / 2;
+        let area = Math.sqrt(semiPerimetro * (semiPerimetro - ladoA) * (semiPerimetro - ladoB) *(semiPerimetro - ladoC)); 
+        return area;
+    }
+
+    let areaT = areaTrianguloHeron(5, 6, 7); 
+    console.log(areaT);
+</script>

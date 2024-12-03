@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .alerta-contenedor{
+            width: 300px;
+            padding: 34px;
+            position: fixed;
+            border: solid 3px black;
+            background-color: white;
+            left: calc(50% - 150px);
+            top: calc(50% - 100px);
+        }
+
+        .fondo-modal{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .alerta-titulo{
+            font-size: 24px;
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        .btn-cerrar{
+            background-color: red;
+            color: white;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <button id="btnMostrar">Mostrar</button>
+
+    <script>
+        "use strict"
+
+        const superAlerta = (textoTitulo, textoMensaje) =>{
+            
+            /* FONDO NEGRO DEL MODAL */
+            let fondoModal = document.createElement("DIV");
+            fondoModal.className = "fondo-modal";
+            document.body.appendChild(fondoModal);
+
+            /* CONTENEDOR PADRE QUE ALBERGA TODO EL CONT DEL MODAL */
+            let alerta =document.createElement("DIV");
+            alerta.className = "alerta-contenedor";
+            document.body.appendChild(alerta);
+
+            /*TITULO DEL MODAL */
+            let titulo =document.createElement("DIV");
+            titulo.className = "alerta-titulo";
+            titulo.innerText = textoTitulo;
+            alerta.appendChild(titulo);
+
+            /* TEXTO DEL MODAL */
+            let mensaje =document.createElement("DIV");
+            mensaje.innerText = textoMensaje;
+            alerta.appendChild(mensaje);
+
+            /* BOTON PARA DESAPARECER EL MODAL DENTRO DE LA ALERTA */
+            let btnCerrar =document.createElement("BUTTON");
+            btnCerrar.className = "btn-cerrar"
+            btnCerrar.innerText = "X";
+            alerta.appendChild(btnCerrar);
+
+            btnCerrar.addEventListener("click", () => {
+                fondoModal.remove()
+                alerta.remove()
+            })
+        }
+
+
+
+        let btnMostrar = document.getElementById("btnMostrar");
+        btnMostrar.addEventListener("click", () =>{
+            superAlerta("Importante", "La prox semana estará disponible la EP4.......");
+        });
+    </script>
+</body>
+</html>

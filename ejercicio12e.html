@@ -1,0 +1,8 @@
+<script>
+    const volConoTruncado = (radMenor, radMayor, altura) =>{
+        let volumen = Math.PI * altura * (Math.pow(radMayor, 2)+ Math.pow(radMenor, 2) + radMayor * radMenor ) / 3;
+        return volumen
+    }
+
+    console.log(volConoTruncado(2, 6, 10));
+</script>
