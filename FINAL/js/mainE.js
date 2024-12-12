@@ -1,17 +1,22 @@
 "use strict"
 let personaje = document.getElementById("personaje");
+
 let flechaDerecha = false;
 let flechaIzquierda = false;
 let flechaArriba = false;
 let flechaAbajo = false;
 let sinPresionar = true;
-let posX = 0;
+
+let posX = 1000;
 let velocidadX = 10;
-let posY = 0;
+let posY = 400;
 let velocidadY = 10;
 
 let fotograma = 0;
 
+// Establecer la posición inicial del personaje
+personaje.style.left = `${posX}px`;
+personaje.style.top = `${posY}px`;
 
 const animar = () => {
     if (sinPresionar) {
@@ -44,14 +49,13 @@ const animar = () => {
 
 const moverX = (orientacionX) => {
     posX += orientacionX * velocidadX;
-    personaje.style.left = posX + "px"
+    personaje.style.left = `${posX}px`;
     personaje.style.transform = "scaleX(" + orientacionX + ")"
 }
 
 const moverY = (orientacionY) => {
     posY += orientacionY * velocidadY;
-    personaje.style.top = posY + "px"
-    // personaje.style.transform = "scaleY(" + orientacionY + ")"
+    personaje.style.top = `${posY}px`
 }
 
 document.body.addEventListener("keydown", (event) => {
