@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+    overflow: hidden;
+}
+
+.pelota{
+    /* width: 10px; */
+    /* height: 10px; */
+    /* background-color: rgb(16, 33, 185);  SE COLOCA DE FORMA DINAMICA  */
+    border-radius: 50%;
+    position: absolute;
+}

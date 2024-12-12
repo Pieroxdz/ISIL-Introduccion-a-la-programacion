@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+    /* overflow: hidden; */
+}
+
+.pelota{
+    width: 5px;
+    height: 5px;
+    background-color: rgb(221, 222, 231);
+    border-radius: 50%;
+    position: absolute;
+}

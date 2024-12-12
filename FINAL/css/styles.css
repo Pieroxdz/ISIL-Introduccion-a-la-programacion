@@ -1,0 +1,9 @@
+#selector-paises{
+    display: flex;
+}
+
+#botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
