@@ -5,3 +5,10 @@
     border-radius: 50%;
     position: absolute;
 }
+
+#canion{
+    width: 100px;
+    height: 25px;
+    background-color: black;
+    position: absolute;
+}

@@ -11,7 +11,7 @@
       - [Video 19](https://www.youtube.com/watch?v=OLFWcG4Xn0w&t=2790s)
       - [Video 20](https://www.youtube.com/watch?v=S9sCbyFTwa0)
       - [Video 21](https://www.youtube.com/watch?v=h5SUiBe-KFI)
-      - [Video 22](https://www.youtube.com/watch?v=GzfpK3LHF_M  )
+      - [Video 22](https://www.youtube.com/watch?v=GzfpK3LHF_M)
       - [Video 23](https://www.youtube.com/watch?v=HmDZVYD-r74)
       - [Video 24](https://www.youtube.com/watch?v=qBldPrm0oe8)
 
