@@ -20,23 +20,23 @@ personaje.style.top = `${posY}px`;
 
 const animar = () => {
     if (sinPresionar) {
-        personaje.src = `sprites/Idle__00${fotograma}.png`
+        personaje.src = `./sprites/Idle__00${fotograma}.png`
         personaje.style.transform = ""; // Reinicia transformaciones
     }
     if (flechaDerecha) {
-        personaje.src = `sprites/Run__00${fotograma}.png`
+        personaje.src = `./sprites/Run__00${fotograma}.png`
         moverX(1)
     }
     if (flechaIzquierda) {
-        personaje.src = `sprites/Run__00${fotograma}.png`
+        personaje.src = `./sprites/Run__00${fotograma}.png`
         moverX(-1)
     }
     if (flechaArriba) {
-        personaje.src = `sprites/Climb_00${fotograma}.png`
+        personaje.src = `./sprites/Climb_00${fotograma}.png`
         moverY(-1)
     }
     if (flechaAbajo) {
-        personaje.src = `sprites/Climb_00${fotograma}.png`
+        personaje.src = `./sprites/Climb_00${fotograma}.png`
         moverY(1)
     }
 

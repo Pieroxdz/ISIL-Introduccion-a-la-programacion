@@ -10,3 +10,8 @@ body{
     border-radius: 50%;
     position: absolute;
 }
+.logo{
+    position: absolute;
+    top: 350px;
+    left: 450px;
+}

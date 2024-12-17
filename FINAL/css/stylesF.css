@@ -1,0 +1,22 @@
+
+#botones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+#btnIzquierda,
+#btnDerecha,
+#btnIzquierdaTodos {
+    margin-bottom: 10px;
+}
+
+#selector-paises {
+    display: flex;
+}
+
+#paises,
+#elegidos {
+    width: 100px;
+}
