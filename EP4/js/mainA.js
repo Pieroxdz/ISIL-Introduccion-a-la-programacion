@@ -1,5 +1,6 @@
 "use strict";
 let txtNombre = document.getElementById("txtNombre");
+let txtMarca = document.getElementById("txtMarca");
 let txtPrecio = document.getElementById("txtPrecio");
 let txtCantidad = document.getElementById("txtCantidad");
 let btnAgregar = document.getElementById("btnAgregar");
@@ -11,6 +12,7 @@ let total = 0;
 btnAgregar.addEventListener("click", () => {
     /* ESTÁS VARIABLES SOLO EXISTEN DENTRO DE LA FUNCIÓN */
     let nombre = txtNombre.value;
+    let marca = txtMarca.value;
     let precio = txtPrecio.value;
     let cantidad = txtCantidad.value;
     let subtotal = precio * cantidad;
@@ -19,6 +21,7 @@ btnAgregar.addEventListener("click", () => {
     
     let fila = "<tr>" +
     "<td>" + nombre + "</td>" +
+    "<td>" + marca + "</td>" +
     "<td>" + precio + "</td>" +
     "<td>" + cantidad + "</td>" +
     "<td>" + subtotal + "</td>" +
@@ -34,7 +37,7 @@ btnAgregar.addEventListener("click", () => {
         botonesEliminar[i].addEventListener("click", (event) => {
             let posicionFila = event.target.parentNode.parentNode.rowIndex;
             let subtotalQuitar = bodyProductos.getElementsByTagName("tr")[posicionFila - 1]
-            .getElementsByTagName("td")[3].innerText;
+            .getElementsByTagName("td")[4].innerText;
             total -= subtotalQuitar;
             cajaTotal.innerText = "Total " + total
 
